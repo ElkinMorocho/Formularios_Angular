@@ -1,0 +1,27 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" formControlName="cedula">
+    </div>
+
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre">
+    </div>
+
+    <div>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" formControlName="fechaNacimiento">
+    </div>
+
+    <div>
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" formControlName="ciudad">
+        <option value="opcion1">Machala</option>
+        <option value="opcion2">Guayaquil</option>
+        <option value="opcion3">Loja</option>
+      </select>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
